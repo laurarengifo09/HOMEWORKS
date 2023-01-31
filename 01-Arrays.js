@@ -1,3 +1,6 @@
+//Nombre: Laura Sofia Rengifo Ibarra
+//Codigo: 2210043
+
 const Bodega_1 = [ [
     {precio: 110000000, marca: 'BMW', modelo:2018, km:50000 },
     {precio: 75000000, marca: 'Mazda', modelo:2017, km:30000}],

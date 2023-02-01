@@ -1,5 +1,6 @@
 //Nombre: Laura Sofia Rengifo Ibarra
 //Codigo: 2210043
+//Estructuras de datos y algoritmos 2
 
 const Bodega_1 = [ [
     {precio: 110000000, marca: 'BMW', modelo:2018, km:50000 },
@@ -151,11 +152,15 @@ const año_2010 = modelos.lastIndexOf('2017')
 const array_precios =[110000000, 65000000, 54000000, 76000000, 100000000]
 let suma= array_precios.reduceRight((a,i)=> a+i);
 
-//function localeString f
+//function localeString 
 const localeString= modelos.toLocaleString('de-DE')
 // Expected Output : '2.010,2.015,2.016,2.017,2.018,2.019,2.020,2.017,2.018,2.019,2.020'
 
+//function toString
+console.log(array_precios.toString())
 
+//function keys
+console.log(Object.keys(array_precios))
 
 
 

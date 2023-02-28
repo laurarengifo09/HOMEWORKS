@@ -5,6 +5,7 @@ import { Button, Counter } from './Components/Button';
 import { AddCategory, Categories } from './Components/AddCategory';
 import { GifGrid } from './Components/GifGrid';
 import { GifExpertApp } from './GiftExpertApp';
+import { MultipleCustomHooks } from './Components/MultipleCustomHooks';
 
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
     <>
     {/* <FirstApp></FirstApp>
     <Counter sum={0}></Counter> */}
-    <Button></Button>
+    {/* <Button></Button> */}
     {/* <GifExpertApp></GifExpertApp> */}
+    <MultipleCustomHooks></MultipleCustomHooks>
     </>
 
   );

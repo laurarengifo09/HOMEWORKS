@@ -1,37 +1,34 @@
-import {useState} from 'react'
+
+import React from 'react'
+import PropTypes from "prop-types";
+import {useState} from "react"
+import { useCounter } from '../hooks/useCounter';
 
 
- export const Counter =({sum})=>{
-    const [counter, setcounter] = useState(sum)
+export const Button = ({title, sum}) => {
 
-    const handleAdd =()=>{
-        setcounter(counter +1)
-    }
+  const {handleAdd, handleReset, handleSubstract, counter} = useCounter(sum)
 
-    const handleSubstract =()=>{
-        setcounter(counter - 1)
-    }
-
-    const handleReset =()=>{
-        setcounter(sum)
-    }
-   
-
-    
-
-    return(
-        <div className='FirstApp'>
-        <h1>Counter</h1>
-        
-        <p>{counter}</p>
-        <button onClick={()=>handleSubstract()}>-1</button>
-        <button onClick={()=>handleReset()}>Reset</button>
-        <button onClick={()=>handleAdd()}>+1</button>
-        
-        
-
-        
+  return (
+    <>
+        <h1> { title } </h1>
+        <div>
+          <span>{ counter }</span>
         </div>
-    )
-
+        <button onClick={ () => handleAdd()} > +1 </button>
+        <button onClick={ () => handleSubstract()}> -1 </button>
+        <button onClick={ () => handleReset()}> Reset </button>
+    </>
+  );
 }
+
+Button.propTypes = {
+  title: PropTypes.string.isRequired,
+  sum: PropTypes.number.isRequired,
+}
+
+Button.defaultProps = {
+  title: "Counter",
+  sum: 0
+}
+

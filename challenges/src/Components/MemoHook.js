@@ -17,6 +17,16 @@ export const MemoHook=()=>{
     return(
         <>
         <h1>MEmo Hook </h1>
+        <hr />
+        <h4>{memo}</h4>
+        <h4>{memo}</h4>
+        <button
+        className="btn btn-primary"
+        onClick={()=>handleAdd()}
+        
+        
+        >+1</button>
+
 
 
 

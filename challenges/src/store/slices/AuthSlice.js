@@ -1,6 +1,6 @@
 import {createSlice} from '@reduxjs/toolkit'
 
-export const AuthSlice = createSlice({
+export const authSlice = createSlice({
     name : 'auth',
     initialState :{
         status:'checking',
@@ -21,4 +21,4 @@ export const AuthSlice = createSlice({
 
 })
 
-// export const {login, logout,checkingCredentials} = authSlice.actions
+export const {login, logout,checkingCredentials} = authSlice.actions

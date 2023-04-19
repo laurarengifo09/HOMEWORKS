@@ -1,9 +1,9 @@
 
 import React from 'react';
 import {Link, BrowserRouter,Route, Routes, Navigate} from 'react-router-dom';
-import { LoginPage } from './Challenge12/LoginPage';
 import { HomePage } from './HomePage';
 import { AboutPage } from './AboutPage';
+import { LoginPage } from '../Challenge12/LoginPage';
 
 
 export const MainApp =()=>{

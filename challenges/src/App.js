@@ -5,7 +5,7 @@ import { MainApp } from './Components/pages/MainApp';
 import { Small } from './Components/Small';
 import { Memorize } from './Components/Memorize';
 import { NavComponent } from './Components/Challenge11/NavComponents';
-import { LoginPage } from './Components/pages/Challenge12/LoginPage';
+import { LoginPage } from './Components/Challenge12/LoginPage';
 // import { NavComponent } from './Components/NavComponent';
 
 

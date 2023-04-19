@@ -1,5 +1,5 @@
 import './index.css';
-import { Counter } from './Challenge13/Challenge13';
+import { Counter } from './Components/Challenge13/Challenge13';
 // import { TodoApp } from './Components/Challenge 10/TodoApp';
 // import { MainApp } from './Components/pages/MainApp';
 // import { Small } from './Components/Small';

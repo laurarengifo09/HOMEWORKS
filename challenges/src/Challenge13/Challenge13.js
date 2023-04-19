@@ -1,9 +1,9 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { increment, decrement, incrementBy } from "../actions/counterActions";
+import { increment, decrement, incrementBy } from "../store/counterSlice";
 
 export const Counter = () => {
-  const count = useSelector((state) => state.count);
+  const {counter} = useSelector((state) => state.counter);
   const dispatch = useDispatch();
 
   const handleIncrement = () => {
@@ -18,12 +18,23 @@ export const Counter = () => {
     dispatch(incrementBy(5));
   };
 
+  console.log(counter)
+
   return (
     <div>
-      <h1>{count}</h1>
-      <button onClick={handleIncrement}>Incrementar</button>
-      <button onClick={handleDecrement}>Decrementar</button>
-      <button onClick={handleIncrementBy}>Incrementar por 5</button>
+      <div className="absolute w-full h-full bg-purple-950">
+        <div className="flex w-full h-full items-center justify-center align-middle">
+          <div className="bg-purple-900 items-center justify-center align-middle px-20 py-10 rounded-lg">
+            <h1 className="text-white text-center text-6xl font-bold">Contador</h1>
+            <h1 className="text-white text-center text-4xl pt-5">{counter}</h1>
+            <div className="flex mt-10 gap-5">
+              <button className="btn text-white text-xl bg-purple-400 p-3 rounded-xl hover:bg-purple-500 font-medium" onClick={()=>handleIncrement()}>Incrementar</button>
+              <button className="btn text-white text-xl bg-purple-400 p-3 rounded-xl hover:bg-purple-500 font-medium" onClick={()=>handleDecrement()}>Decrementar</button>
+              <button className="btn text-white text-xl bg-purple-400 p-3 rounded-xl hover:bg-purple-500 font-medium" onClick={()=>handleIncrementBy()}>Incrementar 5</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

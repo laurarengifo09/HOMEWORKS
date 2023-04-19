@@ -16,9 +16,9 @@ export const authSlice = createSlice({
         },
         logout: (state, action) =>{
             console.log('checking')
-        }
+        },
     }
 
 })
 
-export const {login, logout,checkingCredentials} = authSlice.actions
+// export const {login, logout,checkingCredentials} = authSlice.actions

@@ -1,16 +1,12 @@
 import { useState } from "react";
-import {UserContext} from './UserContext'
+import { UserContext } from './UserContext'
 
-const user ={ }
 
 export const UserProvider =({children})=>{
-     const [user, setUser]= useState();
-
-
+     const [logged, isLogged]= useState();
      return(
-        <UserContext.Provider value ={{user,setUser}}>
+        <UserContext.Provider value = {{ logged, isLogged }}>
             {children}
-
         </UserContext.Provider>
 
      )

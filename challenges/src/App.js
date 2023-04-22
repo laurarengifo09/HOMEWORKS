@@ -1,11 +1,11 @@
 import { Provider } from "react-redux";
 import { store } from "./Components/Challenge14/store/store";
-import { Routes } from "react-router";
+import { Registro } from "./Components/Registro";
 
 function App() {
   return (
     <Provider store={store}>
-      <Routes />
+      <Registro></Registro>
     </Provider>
   );
 }

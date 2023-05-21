@@ -12,6 +12,7 @@ app.use(express.json())
 //rutas 
 app.use('/api/auth', require('./routes/auth'))
 app.use('/user',register)
+app.use('/api/task', require('./routes/task'))
 //escuchar en puerto
 app.listen(process.env.PORT,()=>{
     console.log("servidor corriendo en puerto",process.env.PORT)
